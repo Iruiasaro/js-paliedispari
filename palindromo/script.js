@@ -1,9 +1,6 @@
 //inserire una parola 
 var insertWord = prompt("Inserisci una parola e scopri se è palindroma");
 
-//variabile di controllo
-var controllo;
-
 // variabile parola inversa
 var ReverseWord = "";
 
@@ -11,8 +8,7 @@ var ReverseWord = "";
 var j = insertWord.length - 1;
 
 while (j >= 0) {
-    controllo = insertWord[j];
-    ReverseWord += controllo;
+    ReverseWord += insertWord[j];
     j--;
 }
 //stampa la parola ed il suo Reverse
