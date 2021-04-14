@@ -13,3 +13,25 @@ function randomNumber() {
 }
 var numeroEstratto = randomNumber();
 console.log("Il numero Random estratto è " + numeroEstratto);
+
+//sommatoria numero utente con numero Commputer
+var sommatoria = insertNumber + numeroEstratto;
+console.log("La somma del tuo numero + quello del Computer è " + sommatoria);
+
+//il risultato della somma pari o dispari
+function sommatoriaFinale() {
+    if (sommatoria % 2 === 0) {
+        return "Pari"
+    } else {
+        return "Dispari"
+    }
+}
+
+//chi vince e chi perde?
+var soluzione = sommatoriaFinale();
+
+if (soluzione === pariDispari) {
+    console.log("YOU WIN");
+} else {
+    console.log("YOU LOSE");
+}
