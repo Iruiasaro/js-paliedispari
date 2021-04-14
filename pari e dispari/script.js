@@ -1,12 +1,15 @@
-//scegli se essere pari o dispari
-var pariDispari = prompt("Pari o Dispari?");
+// Chiedo all'utente di scegliere tra pari e dispari 
+var pariDispari = prompt("Pari o Dispari?")
+pariDispari = pariDispari.toLowerCase();
+console.log("Hai scelto di essere " + pariDispari);
 
 //scegliere un numero da 1 a 5
-var numeroScelto = parseInt(prompt("Da 1 a 5 quale numero scegli?"));
+var insertNumber = parseInt(prompt("Scegli un numero da 1 a 5"));
+console.log("Hai inserito il numero " + insertNumber);
 
-
-//l'utente deve necessariamente inserire un numero da 1 a 5
-if (Number.isNaN(numeroScelto) || numeroScelto < 1 || numeroScelto > 5) {
-    alert("ATTENZIONE, DEVI INSERIRE UN NUMERO DA 1 A 5!")
+//estrazione numero da 1 a 5
+function randomNumber() {
+    return Math.ceil(Math.random() * 5)
 }
-
+var numeroEstratto = randomNumber();
+console.log("Il numero Random estratto è " + numeroEstratto);
